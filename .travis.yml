@@ -1,0 +1,18 @@
+
+language: node_js
+
+node_js:
+  - 8.6.0
+
+branches:
+  only:
+    - master
+
+before_install: git fetch --depth=1000
+
+install:
+  - npm i
+
+script:
+  - /bin/bash build/lint-commits.sh
+  - npm run lint
