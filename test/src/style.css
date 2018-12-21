@@ -1,0 +1,38 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+button {
+  border: none;
+  font-size: 14px;
+  padding: 8px 10px;
+  background: #dbe6ea;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+button:hover {
+  background: #b5c7ce;
+}
+
+button:focus {
+  outline: none;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none;
+}
+
+
