@@ -1,4 +1,4 @@
-<p align="center" height="300">
+<p align="center" height="250">
   <img src="logo-v.png" align="center"/>
 </p>
 <p align=center>
@@ -11,13 +11,13 @@
 <br/>
 
 ### Getting Started
-#### step.A, make sure you can use decorators.
+#### step.A: make sure you can use decorators.
 
 1. append transform-decorators-legacy to your `.babelrc` file: `"plugins": ["transform-decorators-legacy" ...`
 
 2. `npm i babel-plugin-transform-decorators-legacy -D`
 
-#### step.B, install and import.
+#### step.B: install and import.
 
 1. install lib to your project, `npm i v-decorators -S`.
 
@@ -27,16 +27,18 @@
 
 ### Documentation
 
-- @Decorators.AutoCatch(catchMode)
+- @Decorators.AutoCatch(catchMode?: string)
+
     **params:**
     - None, default. same as 'log',
-    - catchMode: 'error'. print error with console.error,
-    - catchMode: 'log'. print error with console.log.
-    - catchMode: 'slient'. no error message will be displayed.
-    - catchMode: `${functon_name}`, string. specify a function to handle errors.
+    - 'error': print error with console.error,
+    - 'log': print error with console.log.
+    - 'slient': no error message will be displayed.
+    - `${functon_name}`: specify a function to handle errors.
 
     **desc:**
     help you automatically catch possible errors in async function, no `try ... catch` is required to use the function at any time.
+    
     before use:
     ```
       methods: {
@@ -53,34 +55,38 @@
       }
     ```
 
-- @Decorators.Debounce(time)
-      **params:**
-        - time: number, denounce time.
+- @Decorators.Debounce(time?: number)
 
-      **desc:**
-      functions are triggered at most once in a specified time.
+    **params:**
+    - time: denounce time.
 
-- @Decorators.Delay(time)
-      **params:**
-        - time: number, delay time.
+    **desc:**
+    functions are triggered at most once in a specified time.
 
-      **desc:**
-      delayed execution when a function is called. decorator will automatically clean the timer.
+- @Decorators.Delay(time?: number)
+
+    **params:**
+    - time: delay time.
+
+    **desc:**
+    delayed execution when a function is called. decorator will automatically clean the timer.
 
 - @Decorators.Time()
-      **params:**
-        - None.
 
-      **desc:**
-      statistics and displays the execution time of the current function, just like `console.time` and `console.timeEnd`.
+    **params:**
+    - None.
 
-- @Decorators.Shortcut(obj)
-      **params:**
-        - obj: object, key-value pairs that need to bind scopes.
+    **desc:**
+    statistics and displays the execution time of the current function, just like `console.time` and `console.timeEnd`.
 
-      **desc:**
-      bind data to vue instance, **but it's not responsive**. it can reduce the volume of your data function,
-      usually used to bind static data used in vue templates. reduce response data can effectively improve perf.
+- @Decorators.Shortcut(obj: object)
+
+    **params:**
+    - obj: key-value pairs that need to bind scopes.
+
+    **desc:**
+    bind data to vue instance, **but it's not responsive**. it can reduce the volume of your data function, usually used to bind static data used in vue templates. 
+    reduce response data can effectively improve perf.
 
       ex:
       ```
