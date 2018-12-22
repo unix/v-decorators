@@ -21,14 +21,9 @@
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
     "extends": [
-      "'haifengfe/vue'"
+      "haifengfe/vue"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }
