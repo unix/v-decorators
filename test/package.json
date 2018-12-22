@@ -26,8 +26,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+      "'haifengfe/vue'"
     ],
     "rules": {},
     "parserOptions": {
