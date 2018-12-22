@@ -9,45 +9,45 @@
 <a target="_blank" href="https://www.npmjs.com/package/v-decorators" title="Peer dependency "><img src="https://img.shields.io/npm/dependency-version/v-decorators/peer/vue.svg?style=flat-square"></a>
 </p>
 
-[中文文档](README_CN.md)
+[English MD](README.md)
 
-### Getting Started
-#### step.A: make sure you can use decorators.
+### 开始
+#### 第一步: 确保可以在项目中使用装饰器
 
-1. append transform-decorators-legacy to your `.babelrc` file: `"plugins": ["transform-decorators-legacy" ...`
+1. 在 `.babelrc` 文件中添加 `transform-decorators-legacy`: `"plugins": ["transform-decorators-legacy" ...`
 
 2. `npm i babel-plugin-transform-decorators-legacy -D`
 
-#### step.B: install and import.
+#### 第二部：下载和引入库
 
-1. install lib to your project, `npm i v-decorators -S`.
+1. 在你的项目中安装 v-decorators, `npm i v-decorators -S`.
 
-2. import in your component, `import { Decorators } from 'v-decorators'`.
+2. 在组件中引入, `import { Decorators } from 'v-decorators'`.
 
 <br/>
 
-### Documentation
+### 文档
 
 - @Decorators.AutoCatch(catchMode?: string)
 
-    **params:**
-    - None, default. same as 'log'.
-    - 'error': print error with console.error.
-    - 'log': print error with console.log.
-    - 'slient': no error message will be displayed.
-    - `${functon_name}`: specify a function to handle errors.
+    **参数：**
+    - 无，默认。 效果与 'log' 相同。
+    - 'error': 使用 `console.error` 打印捕获到的错误。
+    - 'log': 使用 `console.log` 打印捕获到的错误。
+    - 'slient': 捕获到的任何错误都不会显示。
+    - `${functon_name}`: 指定一个函数名来处理捕获的错误，注意是函数名的字符串。如: AutoCatch('catchFunc')。
 
-    **desc:**
-    help you automatically catch possible errors in async function, no `try ... catch` is required to use the function at any time.
-    
-    before use:
+    **说明：**
+    帮助你自动捕获 async 函数或 Promise 函数可能出现的错误, 使用时无需包裹在 `try ... catch` 中。
+
+    使用前：
     ```
       methods: {
         async request() { try { await http(...) } catch(e) { ... } },
         clickHandle() { request().carch(...) }
       }
     ```
-    after use:
+    使用后：
     ```
       methods: {
         @Decorators.AutoCatch()
@@ -60,11 +60,11 @@
 
 - @Decorators.Debounce(time?: number)
 
-    **params:**
+    **参数：**
     - time: denounce time.
 
-    **desc:**
-    functions are triggered at most once in a specified time.
+    **说明：**
+    在指定的时间内，函数最多被触发一次。在过滤事件等场景下常用。
 
 
 <br/>
@@ -72,40 +72,40 @@
 
 - @Decorators.Delay(time?: number)
 
-    **params:**
-    - time: delay time.
+    **参数：**
+    - time: 延迟时间。
 
-    **desc:**
-    delayed execution when a function is called. decorator will automatically clean the timer.
+    **说明：**
+    当前函数被调用时，延迟执行指定时间。（装饰器会帮你自动清理定时器）
 
 
 <br/>
 
 - @Decorators.Time()
 
-    **params:**
-    - None.
+    **参数：**
+    - 无。
 
-    **desc:**
-    statistics and displays the execution time of the current function, just like `console.time` and `console.timeEnd`.
+    **说明：**
+    统计并在控制台显示当前函数执行时间, 如同 `console.time` 和 `console.timeEnd` 。
 
 
 <br/>
 
 - @Decorators.Shortcut(obj: object)
 
-    **params:**
-    - obj: key-value pairs that need to bind scopes.
+    **参数：**
+    - obj: 需要绑定的对象。
 
-    **desc:**
-    bind data to vue instance, **but it's not responsive**. it can reduce the volume of your data function, usually used to bind static data used in vue templates. 
-    reduce response data can effectively improve perf.
+    **说明：**
+    绑定一组数据到 vue 组件的实例上, **这不是响应式的数据**。这可以有效减少你的组件 data 对象的体积，通常用于绑定静态数据或函数。
+    减少响应式数据可以有效提高组件的性能。
 
-      ex:
+      示例：
       ```
       const MAX = '100', datePipe = (date) => { ... }
       // ...
-      // in your component
+      // 在组件中使用 Shortcut 绑定数据
 
       <div>{{ max }} {{datePipe('2018/12/01')}}</div>
 
@@ -119,9 +119,9 @@
 
 <br/>
 
-### Examples
+### 示例
 
-[online examples](https://v-decorators.netlify.com/)
+[在线示例](https://v-decorators.netlify.com/)
 
 <br/>
 
