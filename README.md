@@ -15,11 +15,11 @@
 
 1. append transform-decorators-legacy to your `.babelrc` file: `"plugins": ["transform-decorators-legacy" ...`
 
-2. `npm i babel-plugin-transform-decorators-legacy`
+2. `npm i babel-plugin-transform-decorators-legacy -D`
 
 #### step.B, install and import.
 
-1. install lib to your project, `npm i v-decorators`.
+1. install lib to your project, `npm i v-decorators -S`.
 
 2. import in your component, `import { Decorators } from 'v-decorators'`.
 
@@ -27,7 +27,7 @@
 
 ### Examples
 
-[online examples]()
+[online examples](https://v-decorators.netlify.com/)
 
 <br/>
 

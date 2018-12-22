@@ -1,5 +1,6 @@
 <template>
 <div>
+  <button @click="$emit('update', 'zh')">中文</button>
   <ul class="list">
     <li class="item">
       <p>auto_catch</p>
@@ -35,10 +36,7 @@ export default {
   @Decorators.Shortcut({
     notChangeValue: 1,
   })
-  name: 'HelloWorld',
-
-  mounted() {
-  },
+  name: 'en',
 
   methods: {
     @Decorators.AutoCatch()
