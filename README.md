@@ -55,6 +55,8 @@
       }
     ```
 
+<br/>
+
 - @Decorators.Debounce(time?: number)
 
     **params:**
@@ -62,6 +64,10 @@
 
     **desc:**
     functions are triggered at most once in a specified time.
+
+
+<br/>
+
 
 - @Decorators.Delay(time?: number)
 
@@ -71,6 +77,9 @@
     **desc:**
     delayed execution when a function is called. decorator will automatically clean the timer.
 
+
+<br/>
+
 - @Decorators.Time()
 
     **params:**
@@ -78,6 +87,9 @@
 
     **desc:**
     statistics and displays the execution time of the current function, just like `console.time` and `console.timeEnd`.
+
+
+<br/>
 
 - @Decorators.Shortcut(obj: object)
 
@@ -103,6 +115,7 @@
         your responsive datas...
       })
       ```
+
 <br/>
 
 ### Examples
