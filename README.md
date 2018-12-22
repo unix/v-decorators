@@ -25,6 +25,80 @@
 
 <br/>
 
+### Documentation
+
+- @Decorators.AutoCatch(catchMode)
+    **params:**
+    - None, default. same as 'log',
+    - catchMode: 'error'. print error with console.error,
+    - catchMode: 'log'. print error with console.log.
+    - catchMode: 'slient'. no error message will be displayed.
+    - catchMode: `${functon_name}`, string. specify a function to handle errors.
+
+    **desc:**
+    help you automatically catch possible errors in async function, no `try ... catch` is required to use the function at any time.
+    before use:
+    ```
+      methods: {
+        async request() { try { await http(...) } catch(e) { ... } },
+        clickHandle() { request().carch(...) }
+      }
+    ```
+    after use:
+    ```
+      methods: {
+        @Decorators.AutoCatch()
+        async request() { await http(...) },
+        clickHandle() { request() }
+      }
+    ```
+
+- @Decorators.Debounce(time)
+      **params:**
+        - time: number, denounce time.
+
+      **desc:**
+      functions are triggered at most once in a specified time.
+
+- @Decorators.Delay(time)
+      **params:**
+        - time: number, delay time.
+
+      **desc:**
+      delayed execution when a function is called. decorator will automatically clean the timer.
+
+- @Decorators.Time()
+      **params:**
+        - None.
+
+      **desc:**
+      statistics and displays the execution time of the current function, just like `console.time` and `console.timeEnd`.
+
+- @Decorators.Shortcut(obj)
+      **params:**
+        - obj: object, key-value pairs that need to bind scopes.
+
+      **desc:**
+      bind data to vue instance, **but it's not responsive**. it can reduce the volume of your data function,
+      usually used to bind static data used in vue templates. reduce response data can effectively improve perf.
+
+      ex:
+      ```
+      const MAX = '100', datePipe = (date) => { ... }
+      // ...
+      // in your component
+
+      <div>{{ max }} {{datePipe('2018/12/01')}}</div>
+
+      @Decorators.Shortcut({
+        max: MAX, datePipe: datePipe,
+      })
+      data: () => ({
+        your responsive datas...
+      })
+      ```
+<br/>
+
 ### Examples
 
 [online examples](https://v-decorators.netlify.com/)
