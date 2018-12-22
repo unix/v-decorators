@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "examples-v-decorators",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,15 +21,9 @@
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+      "haifengfe/vue"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }
