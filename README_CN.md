@@ -92,7 +92,7 @@
 
 <br/>
 
-- @Decorators.Shortcut(obj: object)
+- @Decorators.Shortcuts(obj: object)
 
     **参数：**
     - obj: 需要绑定的对象。
@@ -105,11 +105,11 @@
       ```
       const MAX = '100', datePipe = (date) => { ... }
       // ...
-      // 在组件中使用 Shortcut 绑定数据
+      // 在组件中使用 Shortcuts 绑定数据
 
       <div>{{ max }} {{datePipe('2018/12/01')}}</div>
 
-      @Decorators.Shortcut({
+      @Decorators.Shortcuts({
         max: MAX, datePipe: datePipe,
       })
       data: () => ({

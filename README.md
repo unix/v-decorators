@@ -92,7 +92,7 @@
 
 <br/>
 
-- @Decorators.Shortcut(obj: object)
+- @Decorators.Shortcuts(obj: object)
 
     **params:**
     - obj: key-value pairs that need to bind scopes.
@@ -109,7 +109,7 @@
 
       <div>{{ max }} {{datePipe('2018/12/01')}}</div>
 
-      @Decorators.Shortcut({
+      @Decorators.Shortcuts({
         max: MAX, datePipe: datePipe,
       })
       data: () => ({
