@@ -44,7 +44,7 @@
     ```
       methods: {
         async request() { try { await http(...) } catch(e) { ... } },
-        clickHandle() { request().carch(...) }
+        clickHandle() { request().catch(...) }
       }
     ```
     after use:
