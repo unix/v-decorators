@@ -40,6 +40,15 @@
         <button @click="refresh">fouce refresh</button>
       </div>
     </li>
+    <li class="item">
+      <div class="desc">
+        <h3>@Decorators.Deprecated()</h3>
+        <p>将一个对象绑定在 Vue 的实例下，非响应。这在非常多数据需要绑定却不想全部都放在 data 中(无需响应)时很有用。</p>
+      </div>
+      <div>
+        <button @click="deprecatedTestFunc">run function</button>
+      </div>
+    </li>
   </ul>
 </div>
 </template>
@@ -73,6 +82,10 @@ export default {
     time() {
       const texts = new Array(200).fill('hello').map(v => `${v} world`)
       console.log(texts)
+    },
+
+    @Decorators.Deprecated()
+    deprecatedTestFunc() {
     },
 
     add() {
