@@ -119,6 +119,25 @@
 
 <br/>
 
+- @Decorators.Deprecated(message?: string)
+
+    **参数：**
+    - message: 提示信息。
+
+    **说明：**
+    宣布一个函数即将被废弃，当函数被调用时将在控制台打印一条警告，你可以自定义警告的内容。
+
+<br/>
+
+- @Decorators.NextTick()
+
+    **参数：** 无.
+
+    **说明：**
+    在 Vue.nextTick 内运行当前函数. 更多信息请参考: [Vue.nextTick](https://cn.vuejs.org/v2/api/#Vue-nextTick)
+
+<br/>
+
 ### 示例
 
 [在线示例](https://v-decorators.netlify.com/)
