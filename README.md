@@ -119,6 +119,25 @@
 
 <br/>
 
+- @Decorators.Deprecated(message?: string)
+
+    **params:**
+    - message: logs.
+
+    **desc:**
+    show a deprecation message when function called.
+
+<br/>
+
+- @Decorators.NextTick()
+
+    **params:** None.
+
+    **desc:**
+    run function in Vue.nextTick. more information: [Vue.nextTick](https://cn.vuejs.org/v2/api/#Vue-nextTick)
+
+<br/>
+
 ### Examples
 
 [online examples](https://v-decorators.netlify.com/)
