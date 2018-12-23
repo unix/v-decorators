@@ -35,7 +35,7 @@
         <p>将一个对象绑定在 Vue 的实例下，非响应。这在非常多数据需要绑定却不想全部都放在 data 中(无需响应)时很有用。</p>
       </div>
       <div>
-        {{notChangeValue}}
+        {{ notChangeValue }}
         <button @click="add">add value</button>
         <button @click="refresh">fouce refresh</button>
       </div>
@@ -43,10 +43,16 @@
     <li class="item">
       <div class="desc">
         <h3>@Decorators.Deprecated()</h3>
-        <p>将一个对象绑定在 Vue 的实例下，非响应。这在非常多数据需要绑定却不想全部都放在 data 中(无需响应)时很有用。</p>
+        <p>声明一个函数将被废弃。</p>
       </div>
       <div>
         <button @click="deprecatedTestFunc">run function</button>
+      </div>
+    </li>
+    <li class="item">
+      <div class="desc">
+        <h3>@Decorators.NextTick()</h3>
+        <p>当前函数在 Vue.nextTick 内运行。具体参见 <a href="https://cn.vuejs.org/v2/api/#Vue-nextTick" target="_blank">Vue.nextTick</a></p>
       </div>
     </li>
   </ul>
@@ -57,10 +63,13 @@
 import { Decorators } from '../../../index'
 
 export default {
+  name: 'demo',
+
   @Decorators.Shortcut({
     notChangeValue: 1,
   })
-  name: 'demo',
+  data: () => ({
+  }),
 
   methods: {
     @Decorators.AutoCatch()
@@ -86,6 +95,10 @@ export default {
 
     @Decorators.Deprecated()
     deprecatedTestFunc() {
+    },
+
+    @Decorators.NextTick()
+    nextTick() {
     },
 
     add() {
