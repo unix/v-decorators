@@ -31,7 +31,7 @@
     </li>
     <li class="item">
       <div class="desc">
-        <h3>@Decorators.Shortcut()</h3>
+        <h3>@Decorators.Shortcuts()</h3>
         <p>将一个对象绑定在 Vue 的实例下，非响应。这在非常多数据需要绑定却不想全部都放在 data 中(无需响应)时很有用。</p>
       </div>
       <div>
@@ -65,7 +65,7 @@ import { Decorators } from '../../../index'
 export default {
   name: 'demo',
 
-  @Decorators.Shortcut({
+  @Decorators.Shortcuts({
     notChangeValue: 1,
   })
   data: () => ({
