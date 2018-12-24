@@ -69,6 +69,14 @@
 
 <br/>
 
+- @Decorators.Throttle(wait: number = 300, options: Object={ leading: true, trailing: true })
+
+
+    **params:**
+    - wait: The number of milliseconds to throttle invocations to.
+    - options:
+       - leading: Specify invoking on the leading edge of the timeout.
+       - trailing: Specify invoking on the trailing edge of the timeout.
 
 - @Decorators.Delay(time?: number)
 

@@ -17,6 +17,13 @@
     </li>
     <li class="item">
       <div class="desc">
+        <h3>@Decorators.Throttle()</h3>
+        <p>在 wait 秒内最多执行 fn 一次的函数。</p>
+      </div>
+      <button @click="throttle">throttle</button>
+    </li>
+    <li class="item">
+      <div class="desc">
         <h3>@Decorators.Delay()</h3>
         <p>每次调用函数都会延迟一段时间。</p>
       </div>
@@ -80,6 +87,11 @@ export default {
     @Decorators.Debounce(800)
     debounce() {
       console.log('debounce')
+    },
+
+    @Decorators.Throttle(1000, { leading: false })
+    throttle() {
+      console.log('throttle')
     },
 
     @Decorators.Delay(500)

@@ -69,6 +69,13 @@
 
 <br/>
 
+- @Decorators.Throttle(wait: number = 300, options: Object={ leading: true, trailing: true })
+
+    **参数**
+    - wait: 等待时间
+    - options:
+      - leading: 在超时前调用
+      - trailing: 在超时后调用
 
 - @Decorators.Delay(time?: number)
 
