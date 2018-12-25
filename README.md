@@ -140,7 +140,7 @@
 
 ### Examples
 
-[online examples](https://v-decorators.netlify.com/)
+[online examples](https://v-decorators.js.org/)
 
 <br/>
 
