@@ -3,7 +3,7 @@ const defaultCatchType = 'log'
 const dynamicCatchType = 'dynamic_catch'
 
 const errorCatch = {
-  error: err => console.error(`${err}`),
+  error: err => console.error(err),
   log: err => console.log(err),
   slient: () => {},
 }
@@ -23,12 +23,6 @@ export default (catchType = defaultCatchType) => (target, name, descriptor) => {
     if (catchHandler === dynamicCatchType && this[catchType]) {
       catchHandler = this[catchType]
     }
-    let result
-    try {
-      result = _copy.apply(this, args).catch(catchHandler.bind(this))
-    } catch (e) {
-      catchHandler.call(this, e)
-    }
-    return result
+    return Promise.resolve(_copy.apply(this, args)).catch(catchHandler.bind(this))
   }
 }
