@@ -89,7 +89,7 @@ export default {
       console.log('debounce')
     },
 
-    @Decorators.Throttle(1000, { leading: false })
+    @Decorators.Throttle(1000)
     throttle() {
       console.log('throttle')
     },

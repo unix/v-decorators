@@ -69,14 +69,14 @@
 
 <br/>
 
-- @Decorators.Throttle(wait: number = 300, options: Object={ leading: true, trailing: true })
+- @Decorators.Throttle(wait: number = 300)
 
 
     **params:**
     - wait: The number of milliseconds to throttle invocations to.
-    - options:
-       - leading: Specify invoking on the leading edge of the timeout.
-       - trailing: Specify invoking on the trailing edge of the timeout.
+
+    **desc:**
+    Creates a throttled function that only invokes func at most once per every wait milliseconds.
 
 - @Decorators.Delay(time?: number)
 

@@ -69,13 +69,15 @@
 
 <br/>
 
-- @Decorators.Throttle(wait: number = 300, options: Object={ leading: true, trailing: true })
+- @Decorators.Throttle(wait: number = 300)
 
-    **参数**
+    **参数: **
     - wait: 等待时间
-    - options:
-      - leading: 在超时前调用
-      - trailing: 在超时后调用
+
+    **说明: **
+    创建一个节流函数，在 wait 秒内最多执行 func 一次的函数。
+
+<br/>
 
 - @Decorators.Delay(time?: number)
 
