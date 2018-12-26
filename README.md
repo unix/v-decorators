@@ -140,7 +140,7 @@
 
 ### Examples
 
-[online examples](https://v-decorators.js.org/)
+see [examples project](https://github.com/HaiFengFE/v-decorators/tree/master/test)
 
 <br/>
 

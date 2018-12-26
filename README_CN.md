@@ -140,7 +140,7 @@
 
 ### 示例
 
-[在线示例](https://v-decorators.js.org/)
+请看 [示例项目](https://github.com/HaiFengFE/v-decorators/tree/master/test)
 
 <br/>
 
