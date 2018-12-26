@@ -8,6 +8,6 @@ const init = t => `<head><meta charset="UTF-8"><meta name="viewport" content="wi
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack@latest/dist/hack.css"</head><body class="hack"><div style="max-width: 1000px;margin: 0 auto;padding: 30px 0;">
 ${require('marked')(t)}<hr>This project is open-sourced on <a href="https://github.com/HaiFengFE/v-decorators">GitHub</a>.</div></body>`
 
-require('child_process').exec('mkdir dist && cp ../logo-v.png dist/ && cp assets/ dist/')
+require('child_process').exec('mkdir dist && cp ../logo-v.png dist/ && cp -R assets/ dist/')
 fs.writeFileSync('dist/index.html', init(es))
 fs.writeFileSync('dist/index_cn.html', init(cn))
