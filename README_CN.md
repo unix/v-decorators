@@ -1,5 +1,5 @@
 <p align="center" height="250">
-  <img src="logo-v.png" align="center"/>
+  <img height="250" src="https://github.com/HaiFengFE/v-decorators/blob/master/logo-v.png?raw=true" align="center"/>
 </p>
 <p align=center>
 <a target="_blank" href="https://www.npmjs.com/package/v-decorators" title="NPM version"><img src="https://img.shields.io/npm/v/v-decorators/latest.svg?style=flat-square"></a>
@@ -140,7 +140,7 @@
 
 ### 示例
 
-[在线示例](https://v-decorators.js.org/)
+请看 [示例项目](https://github.com/HaiFengFE/v-decorators/tree/master/test)
 
 <br/>
 
