@@ -73,10 +73,13 @@
 
 
     **params:**
-    - wait: The number of milliseconds to throttle invocations to.
+    - wait: the number of milliseconds to throttle invocations to.
 
     **desc:**
-    Creates a throttled function that only invokes func at most once per every wait milliseconds.
+    creates a throttled function that only invokes func at most once per every wait milliseconds.
+
+
+<br/>
 
 - @Decorators.Delay(time?: number)
 
