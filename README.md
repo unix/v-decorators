@@ -69,6 +69,16 @@
 
 <br/>
 
+- @Decorators.Throttle(wait: number = 300)
+
+    **params:**
+    - wait: the number of milliseconds to throttle invocations to.
+
+    **desc:**
+    creates a throttled function that only invokes func at most once per every wait milliseconds.
+
+
+<br/>
 
 - @Decorators.Delay(time?: number)
 

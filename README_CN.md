@@ -69,6 +69,16 @@
 
 <br/>
 
+- @Decorators.Throttle(wait: number = 300)
+
+    **参数: **
+    - wait: 等待时间
+
+    **说明: **
+    创建一个节流函数，在 wait 秒内最多执行 func 一次的函数。
+
+
+<br/>
 
 - @Decorators.Delay(time?: number)
 
