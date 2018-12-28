@@ -71,7 +71,6 @@
 
 - @Decorators.Throttle(wait: number = 300)
 
-
     **params:**
     - wait: the number of milliseconds to throttle invocations to.
 
