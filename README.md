@@ -20,9 +20,9 @@
 
 #### step.B: install and import.
 
-1. install lib to your project, `npm i v-decorators`.
+1. install lib to your project, `npm i @haifeng-fe/v-decorators`.
 
-2. import in your component, `import { Decorators } from 'v-decorators'`.
+2. import in your component, `import { Decorators } from '@haifeng-fe/v-decorators'`.
 
 <br/>
 
@@ -39,7 +39,7 @@
 
     **desc:**
     help you automatically catch possible errors in async function, no `try ... catch` is required to use the function at any time.
-    
+
     before use:
     ```
       methods: {
@@ -108,7 +108,7 @@
     - obj: key-value pairs that need to bind scopes.
 
     **desc:**
-    bind data to vue instance, **but it's not responsive**. it can reduce the volume of your data function, usually used to bind static data used in vue templates. 
+    bind data to vue instance, **but it's not responsive**. it can reduce the volume of your data function, usually used to bind static data used in vue templates.
     reduce response data can effectively improve perf.
 
       ex:

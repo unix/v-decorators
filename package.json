@@ -1,6 +1,6 @@
 {
-  "name": "v-decorators",
-  "version": "0.2.1",
+  "name": "@haifeng-fe/v-decorators",
+  "version": "1.0.0",
   "description": "decorators for vue",
   "main": "index.js",
   "scripts": {

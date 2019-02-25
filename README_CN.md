@@ -20,9 +20,9 @@
 
 #### 第二部：下载和引入库
 
-1. 在你的项目中安装 v-decorators, `npm i v-decorators`.
+1. 在你的项目中安装 v-decorators, `npm i @haifeng-fe/v-decorators`.
 
-2. 在组件中引入, `import { Decorators } from 'v-decorators'`.
+2. 在组件中引入, `import { Decorators } from '@haifeng-fe/v-decorators'`.
 
 <br/>
 
