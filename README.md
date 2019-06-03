@@ -1,6 +1,4 @@
-<p align="center" height="250">
-  <img height="400" src="./logo-v.png" align="center"/>
-</p>
+![](./logo-v.png)
 
 [中文文档](README_CN.md)
 
