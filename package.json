@@ -4,7 +4,8 @@
   "description": "decorators for vue",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "now-build": "NODE_ENV=production yarn run build && cp ./public/favicon.ico ./dist"
   },
   "repository": {
     "type": "git",

@@ -81,7 +81,7 @@ export default {
   methods: {
     @Decorators.AutoCatch()
     async request() {
-      const w = await fetch()
+      await fetch()
     },
 
     @Decorators.Debounce(800)
@@ -119,7 +119,7 @@ export default {
 
     refresh() {
       this.$forceUpdate()
-    }
+    },
   },
 }
 </script>
