@@ -1,12 +1,5 @@
 <p align="center" height="250">
-  <img height="300" src="logo-v.png" align="center"/>
-</p>
-<p align=center>
-<a target="_blank" href="https://www.npmjs.com/package/v-decorators" title="NPM version"><img src="https://img.shields.io/npm/v/v-decorators/latest.svg?style=flat-square"></a>
-<a target="_blank" href="https://www.npmjs.com/package/v-decorators" title="Node version"><img src="https://img.shields.io/npm/dt/v-decorators.svg?style=flat-square"></a>
-<a target="_blank" href="https://opensource.org/licenses/MIT" title="License: MIT"><img src="https://img.shields.io/github/license/wittbulter/v-decorators.svg?style=flat-square"></a>
-<a target="_blank" href="https://travis-ci.org/DhyanaChina/v-decorators" title="Build Status"><img src="https://img.shields.io/travis/wittbulter/v-decorators.svg?style=flat-square"></a>
-<a target="_blank" href="https://www.npmjs.com/package/v-decorators" title="Peer dependency "><img src="https://img.shields.io/npm/dependency-version/v-decorators/peer/vue.svg?style=flat-square"></a>
+  <img height="400" src="./logo-v.png" align="center"/>
 </p>
 
 [中文文档](README_CN.md)
