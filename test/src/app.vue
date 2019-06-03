@@ -1,7 +1,7 @@
 <template>
 <div id="app">
   <div class="doc">
-    <button @click="to('https://github.com/HaiFengFE/v-decorators')">查看文档</button>
+    <button @click="to('https://github.com/wittbulter/v-decorators')">查看文档</button>
   </div>
   <demo/>
 </div>

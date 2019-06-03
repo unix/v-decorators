@@ -4,8 +4,8 @@
 <p align=center>
 <a target="_blank" href="https://www.npmjs.com/package/v-decorators" title="NPM version"><img src="https://img.shields.io/npm/v/v-decorators/latest.svg?style=flat-square"></a>
 <a target="_blank" href="https://www.npmjs.com/package/v-decorators" title="Node version"><img src="https://img.shields.io/npm/dt/v-decorators.svg?style=flat-square"></a>
-<a target="_blank" href="https://opensource.org/licenses/MIT" title="License: MIT"><img src="https://img.shields.io/github/license/HaiFengFE/v-decorators.svg?style=flat-square"></a>
-<a target="_blank" href="https://travis-ci.org/DhyanaChina/v-decorators" title="Build Status"><img src="https://img.shields.io/travis/HaiFengFE/v-decorators.svg?style=flat-square"></a>
+<a target="_blank" href="https://opensource.org/licenses/MIT" title="License: MIT"><img src="https://img.shields.io/github/license/wittbulter/v-decorators.svg?style=flat-square"></a>
+<a target="_blank" href="https://travis-ci.org/DhyanaChina/v-decorators" title="Build Status"><img src="https://img.shields.io/travis/wittbulter/v-decorators.svg?style=flat-square"></a>
 <a target="_blank" href="https://www.npmjs.com/package/v-decorators" title="Peer dependency "><img src="https://img.shields.io/npm/dependency-version/v-decorators/peer/vue.svg?style=flat-square"></a>
 </p>
 
@@ -20,9 +20,9 @@
 
 #### 第二部：下载和引入库
 
-1. 在你的项目中安装 v-decorators, `npm i @haifeng-fe/v-decorators`.
+1. 在你的项目中安装 v-decorators, `npm i v-decorators`.
 
-2. 在组件中引入, `import { Decorators } from '@haifeng-fe/v-decorators'`.
+2. 在组件中引入, `import { Decorators } from 'v-decorators'`.
 
 <br/>
 
@@ -150,7 +150,7 @@
 
 ### 示例
 
-请看 [示例项目](https://github.com/HaiFengFE/v-decorators/tree/master/test)
+请看 [示例项目](https://github.com/v-decorators/tree/master/test)
 
 <br/>
 

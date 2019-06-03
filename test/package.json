@@ -16,14 +16,14 @@
     "@vue/cli-service": "^3.2.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
-    "eslint-config-haifengfe": "^0.1.5",
+    "eslint-config-lambdas": "^0.1.5",
     "eslint-plugin-vue": "^5.0.0-0",
     "marked": "^0.5.2",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
     "extends": [
-      "haifengfe/vue"
+      "lambdas/vue"
     ],
     "parserOptions": {
       "parser": "babel-eslint"

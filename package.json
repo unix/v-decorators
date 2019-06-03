@@ -1,16 +1,14 @@
 {
-  "name": "@haifeng-fe/v-decorators",
+  "name": "v-decorators",
   "version": "1.0.0",
   "description": "decorators for vue",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.vue src",
-    "commit": "commitizen init cz-conventional-changelog --save --save-exact --force",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "lint": "eslint --ext .js,.vue src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HaiFengFE/v-decorators.git"
+    "url": "git+https://github.com/wittbulter/v-decorators.git"
   },
   "keywords": [
     "decorators",
@@ -21,20 +19,15 @@
     "index.js",
     "README.md"
   ],
-  "author": "HaiFengFE",
+  "author": "WittBulter (lambdas.dev@gmail.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HaiFengFE/v-decorators/issues"
+    "url": "https://github.com/wittbulter/v-decorators/issues"
   },
-  "homepage": "https://github.com/HaiFengFE/v-decorators#readme",
+  "homepage": "https://github.com/wittbulter/v-decorators#readme",
   "devDependencies": {
-    "@commitlint/config-conventional": "^7.1.2",
-    "commitizen": "^3.0.5",
-    "commitlint": "^7.2.1",
-    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.10.0",
-    "eslint-config-haifengfe": "^0.1.5",
-    "husky": "^1.3.0"
+    "eslint-config-lambdas": "^0.1.5"
   },
   "peerDependencies": {
     "vue": "^2.3.0"
