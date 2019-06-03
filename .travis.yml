@@ -9,17 +9,14 @@ notifications:
     on_success: never
 
 node_js:
-  - 8.6.0
+  - 11.13.0
 
 branches:
   only:
     - master
 
-before_install: git fetch --depth=1000
-
 install:
-  - npm i
+  - yarn
 
 script:
-  - /bin/bash build/lint-commits.sh
   - npm run lint
