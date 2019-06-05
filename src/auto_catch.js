@@ -18,8 +18,8 @@ const dispenseCatch = type => {
 export default (catchType = defaultCatchType) => (target, name, descriptor) => {
   const _copy = descriptor.value
   let catchHandler = dispenseCatch(catchType)
-  
-  descriptor.value = function(...args) {
+
+  descriptor.value = function (...args) {
     if (catchHandler === dynamicCatchType && this[catchType]) {
       catchHandler = this[catchType]
     }

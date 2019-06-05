@@ -1,4 +1,5 @@
 const fs = require('fs')
+
 const es = fs.readFileSync('../README.md', 'utf-8')
   .replace('[中文文档](README_CN.md)', '<a href="./index_cn.html">中文</a>')
 const cn = fs.readFileSync('../README_CN.md', 'utf-8')

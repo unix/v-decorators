@@ -1,7 +1,7 @@
 
 export default (sources = {}) => target => {
   const _created = target.created
-  target.created = function() {
+  target.created = function () {
     _created && _created.call(this)
     Object.keys(sources).forEach(key => {
       this[key] = sources[key]
