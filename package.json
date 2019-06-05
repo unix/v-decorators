@@ -4,7 +4,7 @@
   "description": "decorators for vue",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "xo --extend lambdas --ignore examples"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,8 @@
   },
   "homepage": "https://github.com/wittbulter/v-decorators#readme",
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.10.0",
-    "eslint-config-lambdas": "^0.0.11"
+    "eslint-config-lambdas": "^0.1.0",
+    "xo": "^0.24.0"
   },
   "peerDependencies": {
     "vue": "^2.3.0"
