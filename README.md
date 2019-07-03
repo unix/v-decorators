@@ -141,7 +141,7 @@
 
 ### Examples
 
-see [examples project](https://github.com/wittbulter/v-decorators/tree/master/test)
+see [examples project](https://github.com/unix/v-decorators/tree/master/test)
 
 <br/>
 

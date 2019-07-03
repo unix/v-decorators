@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wittbulter/v-decorators.git"
+    "url": "git+https://github.com/unix/v-decorators.git"
   },
   "keywords": [
     "decorators",
@@ -19,12 +19,12 @@
     "index.js",
     "README.md"
   ],
-  "author": "WittBulter (lambdas.dev@gmail.com)",
+  "author": "unix (lambdas.dev@gmail.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wittbulter/v-decorators/issues"
+    "url": "https://github.com/unix/v-decorators/issues"
   },
-  "homepage": "https://github.com/wittbulter/v-decorators#readme",
+  "homepage": "https://github.com/unix/v-decorators#readme",
   "devDependencies": {
     "eslint-config-lambdas": "^0.1.0",
     "xo": "^0.24.0"
